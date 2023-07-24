@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+  font-family: "Open Sans";
+  src: url();
+}
+
+/* Geral */
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0px;
+  color: #666;
+}
+
+.interface {
+  max-width: 1920px;
+  width: 100%;
+}
+
+/* Início da configuracao do Cabecalho */
+
+header {
+  position: relative;
+  top: 0px;
+  height: auto;
+  width: 100%;
+}
+
+/* Fim da configuracao do Cabecalho */
+
+/* Início da configuracao da barra de navegacao */
+
+nav {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+nav::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+nav.nav-container {
+  max-width: 1200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px; /* Deixar a logo no meio da nav */
+  margin-left: 15px; /* Seoarar a logo do lago esquerdo */
+}
+
+nav.nav-container ul {
+  float: right; /* Jogando a barra pro lado direito */
+  height: 100px;
+  line-height: 100px; /* Deixando a nav no meio */
+  margin: 0px;
+}
+
+nav.nav-container li {
+  list-style: none;
+  float: left;
+  margin: 0px 15px;
+}
+
+nav.nav-container li a {
+  text-decoration: none;
+  color: #666;
+  transition: 0.5s;
+}
+
+nav.nav-container li a:hover {
+  color: #3381f3;
+}
+
+/* Fim da configuracao da barra de navegacao */
+
+/* Início da configuracao do banner */
+
+div#main-banner {
+  background: url("../img/banner6.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0px 55%;
+  position: relative;
+  margin-top: 0px;
+}
+
+div#search-form {
+  position: relative;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  text-align: center;
+}
+
+div#search-form h1 {
+  font-size: 40px;
+}
+
+div#search-form p {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 300px;
+}
+
+div#search-form input,
+div#search-form select {
+  background-color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+div#search-form input[type="submit"] {
+  background-color: #3381f3;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+div#search-form input[type="submit"]:hover {
+  background-color: #2b79eb;
+}
+
+/* Fim da configuracao do banner */
+
+/* Início da configuracao do seção ultimos empregos */
+
+main#lastjobs-container {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+main.wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main#lastjobs-container h1 {
+  font-size: 36pt;
+  margin-bottom: 50px;
+}
+
+main#lastjobs-container ul {
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+main#lastjobs-container ul li {
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+  position: relative;
+}
+
+main#lastjobs-container ul li:last-child {
+  border: none;
+}
+
+a.clickarea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fim da configuracao do seção ultimos empregos */
+
+/* Início da configuração das logos */
+
+div.area-compania {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  padding-left: 1%;
+}
+
+div.area-compania img {
+  width: 100px;
+  margin-top: 2.5px;
+}
+
+div.info-compania {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 10px;
+  text-align: left;
+  position: absolute;
+}
+
+div.info-compania h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+div.info-compania p {
+  font-weight: bold;
+}
+
+div.localidade {
+  color: #6d6d6d;
+  display: inline-block;
+  width: 25%;
+  position: absolute;
+  height: 100%;
+  line-height: 80px;
+}
+
+div.localidade i,
+div.localidade p {
+  display: inline-block;
+}
+
+div.localidade i {
+  margin-right: 5px;
+}
+
+div.tipo-trabalho {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  padding-top: 30px;
+  right: 1%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+div.tipo-trabalho span {
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+span.clt {
+  background-color: #735fee;
+}
+
+span.pj {
+  background-color: #5bbc2e;
+}
+
+span.homeoffice {
+  background-color: #ff5a5f;
+}
+
+/* Fim da configuração das logos */
+
+/* div de ver mais vagas */
+
+div.btnjobs-container {
+  margin-top: 50px;
+}
+
+a.btn-jobs {
+  text-transform: uppercase;
+  background-color: white;
+  color: #3381f3;
+  border: 2px solid #3381f3;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+a.btn-jobs:hover {
+  background-color: #3381f3;
+  color: white;
+}

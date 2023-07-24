@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobFinder</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/af95fc2e99.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="interface">
+      <header>
+        <!-- ↑↑ [header] Início do Cabeçalho -->
+        <nav class="nav-container">
+          <!-- ↑↑ [nav] Início do menu de Navegação -->
+          <img id="logo" src="img/logo.png" alt="Logo do Site" />
+          <ul>
+            <li><a href="#">Encontrar vagas</a></li>
+            <li><a href="#">Enviar vagas</a></li>
+            <li><a href="#">Contatos</a></li>
+          </ul>
+          <!-- ↓↓ [nav] Fim do menu de Navegação -->
+        </nav>
+
+        <div id="main-banner">
+          <div id="search-form">
+            <!-- ↑↑ Formulario de pesquisar vagas -->
+            <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
+            <p>
+              Conecte-se de forma gratuita as melhores empresas e consiga o
+              emprego dos seus sonhos.
+            </p>
+
+            <form>
+              <!-- ↑↑ Início do Formulario -->
+              <input type="text" name="job" placeholder="Digite o cargo..." />
+
+              <select name="regiao">
+                <option value="">Todos os estados</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">Sáo Paulo</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+              </select>
+
+              <select name="categoria">
+                <option value="">Categoria</option>
+                <optgroup label="Tecnologia">
+                  <option value="">Ciêntista da Computação</option>
+                </optgroup>
+              </select>
+
+              <input type="submit" value="Pesquisar" />
+              <!-- ↓↓ Fim do Formulario -->
+            </form>
+          </div>
+        </div>
+        <!-- ↓↓ [header] Fim do Cabeçalho -->
+      </header>
+      <main id="lastjobs-container" class="wrapper">
+        <!-- ↑↑ [Main] Início do principal componente da pagina -->
+        <h1>Últimas vagas enviadas</h1>
+        <ul>
+          <!-- ↑↑ [ul] Início da lista de vagas -->
+          <li>
+            <!-- ↑↑ [li] Início da vaga do Google -->
+            <a href="#" class="clickarea">
+              <div class="area-compania">
+                <img src="img/googlelogo.png" alt="Logo do Google" />
+                <div class="info-compania">
+                  <h3>Desenvolvedor</h3>
+                  <p>Google</p>
+                </div>
+              </div>
+
+              <div class="localidade">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Mountain View, California</p>
+              </div>
+
+              <div class="tipo-trabalho">
+                <span class="clt">CLT</span>
+              </div>
+            </a>
+            <!-- ↓↓ [li] Fim da vaga do Google -->
+          </li>
+          <li>
+            <!-- ↑↑ [li] Início da vaga do IBM -->
+            <a href="#" class="clickarea">
+              <div class="area-compania">
+                <img src="img/ibmlogo.png" alt="Logo do IBM" />
+                <div class="info-compania">
+                  <h3>DBA</h3>
+                  <p>IBM</p>
+                </div>
+              </div>
+
+              <div class="localidade">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Armonk, New York</p>
+              </div>
+
+              <div class="tipo-trabalho">
+                <span class="pj">PJ</span>
+              </div>
+            </a>
+            <!-- ↓↓ [li] Fim da vaga do IBM -->
+          </li>
+          <li>
+            <!-- ↑↑ [li] Início da vaga do Linkedin -->
+            <a href="#" class="clickarea">
+              <div class="area-compania">
+                <img src="img/linkedinlogo.png" alt="Logo do Linkedin" />
+                <div class="info-compania">
+                  <h3>Desenvolvedor Front-End</h3>
+                  <p>Linkedin</p>
+                </div>
+              </div>
+
+              <div class="localidade">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Sunnyvale, California</p>
+              </div>
+
+              <div class="tipo-trabalho">
+                <span class="homeoffice">Home Office</span>
+              </div>
+            </a>
+            <!-- ↓↓ [li] Fim da vaga do Linkedin -->
+          </li>
+          <li>
+            <!-- ↑↑ [li] Início da vaga do Facebook -->
+            <a href="#" class="clickarea">
+              <div class="area-compania">
+                <img src="img/facebooklogo.png" alt="Logo do Facebook" />
+                <div class="info-compania">
+                  <h3>Desenvolvedor Full-Stack</h3>
+                  <p>Facebook</p>
+                </div>
+              </div>
+
+              <div class="localidade">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Menio Park, California</p>
+              </div>
+
+              <div class="tipo-trabalho">
+                <span class="pj">PJ</span>
+              </div>
+            </a>
+            <!-- ↓↓ [li] Fim da vaga do Facebook -->
+          </li>
+          <!-- ↓↓ [ul] Fim da lista de vagas -->
+        </ul>
+        <div class="btnjobs-container">
+          <a href="#" class="btn-jobs">Ver mais vagas</a>
+        </div>
+        <!-- ↓↓ [Main] Fim do principal componente da pagina -->
+      </main>
+    </div>
+  </body>
+</html>
