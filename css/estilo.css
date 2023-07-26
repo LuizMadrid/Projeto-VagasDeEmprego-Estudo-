@@ -9,6 +9,7 @@
 /* Geral */
 html {
   font-family: "Open Sans", sans-serif;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -27,18 +28,18 @@ span {
   color: #666;
 }
 
-.interface {
+/* #interface {
   max-width: 1920px;
   width: 100%;
-}
+} */
 
 /* Início da configuracao do Cabecalho */
 
 header {
   position: relative;
-  top: 0px;
   height: auto;
   width: 100%;
+  border-top: 1px solid #ccc;
 }
 
 /* Fim da configuracao do Cabecalho */
@@ -46,56 +47,54 @@ header {
 /* Início da configuracao da barra de navegacao */
 
 nav {
-  position: fixed;
-  top: 0px;
-  height: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
+
   z-index: 1;
   background-color: white;
-  border-bottom: 1px solid #ccc;
+  max-width: 116.125rem;
 }
 
-nav::after {
-  clear: both;
-  content: "";
-  display: block;
-}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-nav.nav-container {
-  max-width: 1200px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  height: 4.375rem;
+  margin: 0% 5%;
 }
 
 img#logo {
-  width: 50px;
-  height: 50px;
-  margin-top: 25px; /* Deixar a logo no meio da nav */
-  margin-left: 15px; /* Seoarar a logo do lago esquerdo */
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
-nav.nav-container ul {
-  float: right; /* Jogando a barra pro lado direito */
-  height: 100px;
-  line-height: 100px; /* Deixando a nav no meio */
+.nav-container ul {
   margin: 0px;
 }
 
-nav.nav-container li {
+.nav-container li {
+  display: inline-block;
+
   list-style: none;
-  float: left;
   margin: 0px 15px;
 }
 
-nav.nav-container li a {
+.nav-container li a {
   text-decoration: none;
   color: #666;
   transition: 0.5s;
+  padding: 0.3125rem 0.625rem 0rem 0.625rem;
 }
 
-nav.nav-container li a:hover {
+.nav-container li a:hover {
   color: #3381f3;
+  border-bottom: 0.225rem solid #3381f3;
+  border-radius: 0.5rem 0.5rem 0.125rem 0.125rem;
+  padding-bottom: 0.3125rem;
+  background-color: #6d6d6d44;
 }
 
 /* Fim da configuracao da barra de navegacao */
@@ -214,6 +213,8 @@ div.area-compania {
 div.area-compania img {
   width: 100px;
   margin-top: 2.5px;
+  margin-left: 25px;
+  /* border: 1px solid red; */
 }
 
 div.info-compania {
@@ -271,6 +272,7 @@ div.tipo-trabalho span {
   line-height: 20px;
   border-radius: 5px;
   color: white;
+  letter-spacing: 0.125rem;
 }
 
 span.clt {

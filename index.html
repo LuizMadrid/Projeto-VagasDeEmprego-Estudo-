@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="css/estilo.css" />
     <script
       src="https://kit.fontawesome.com/af95fc2e99.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="interface">
-      <header>
-        <!-- ↑↑ [header] Início do Cabeçalho -->
-        <nav class="nav-container">
-          <!-- ↑↑ [nav] Início do menu de Navegação -->
+      <nav>
+        <!-- ↑↑ [nav] Início do menu de Navegação -->
+        <div class="nav-container">
           <img id="logo" src="img/logo.png" alt="Logo do Site" />
           <ul>
             <li><a href="#">Encontrar vagas</a></li>
             <li><a href="#">Enviar vagas</a></li>
             <li><a href="#">Contatos</a></li>
           </ul>
-          <!-- ↓↓ [nav] Fim do menu de Navegação -->
-        </nav>
+        </div>
+        <!-- ↓↓ [nav] Fim do menu de Navegação -->
+      </nav>
 
+      <header>
+        <!-- ↑↑ [header] Início do Cabeçalho -->
         <div id="main-banner">
           <div id="search-form">
             <!-- ↑↑ Formulario de pesquisar vagas -->
@@ -42,15 +43,22 @@
               <select name="regiao">
                 <option value="">Todos os estados</option>
                 <option value="RJ">Rio de Janeiro</option>
-                <option value="SP">Sáo Paulo</option>
+                <option value="SP">São Paulo</option>
                 <option value="RS">Rio Grande do Sul</option>
                 <option value="SC">Santa Catarina</option>
               </select>
 
               <select name="categoria">
-                <option value="">Categoria</option>
+                <option value="">Categorias</option>
+
                 <optgroup label="Tecnologia">
                   <option value="">Ciêntista da Computação</option>
+                  <option value="">Eletricista</option>
+                </optgroup>
+
+                <optgroup label="Humanas">
+                  <option value="">Médico(a)</option>
+                  <option value="">Dentista</option>
                 </optgroup>
               </select>
 
