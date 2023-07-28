@@ -16,6 +16,22 @@ body {
   margin: 0px;
 }
 
+body,
+img {
+  /* Desativar interferencia do usuario na pagina como ctrl + a ou selecionar */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Desativar interferencia do usuario na pagina como ctrl + a ou selecionar */
+}
+
+img {
+  pointer-events: none;
+}
+
 h1,
 h2,
 h3,
@@ -329,7 +345,7 @@ a.btn-jobs:hover {
   margin-right: auto;
   top: -30px;
   left: -320px;
-  padding: 25px;
+  padding: 30px 25px;
   border-radius: 25px;
   max-width: 600px;
   border: 2px solid #ccc;
@@ -426,4 +442,63 @@ a.btn-jobs:hover {
   background: url(../img/banner7.jpg) no-repeat;
   background-size: cover;
   padding: 10em 0;
+}
+
+#depoimento-container h2,
+#depoimento-container p {
+  color: #fff;
+  text-align: center;
+}
+
+#depoimento-container h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+#depoimento-container p {
+  margin-bottom: 50px;
+}
+
+.depoimento-box {
+  display: inline-block;
+  width: 24.5%;
+  text-align: center;
+}
+
+#depoimento-container .depoimento-box .depoimento-msg {
+  background-color: #fff;
+  color: #666;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  margin: 35px auto;
+  font-style: italic;
+}
+
+.depoimento-msg::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.depoimento-box img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.depoimento-nome {
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
